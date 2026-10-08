@@ -1,8 +1,9 @@
 {
   "name": "UI",
   "tree": {
-    "M": {
-      "$path": "src/M"
+    "$className": "DataModel",
+    "ExeUI": {
+      "$path": "src/M/ExeUI"
     }
   }
 }
