@@ -1,7 +1,7 @@
 {
   "name": "m",
   "tree": {
-    "$className": "Folder",
+    "$className": "Model",
     "$path": "src/m"
   }
 }
