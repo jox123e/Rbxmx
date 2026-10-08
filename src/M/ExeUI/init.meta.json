@@ -1,6 +1,9 @@
 {
-    "$className": "Part",
+    "$className": "ScreenGui",
     "$properties": {
-        "Anchored": true,
+        "Enabled": true
+    },
+    "Frame": {
+        "$className": "Frame"
     }
 }
