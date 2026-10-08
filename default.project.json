@@ -1,9 +1,6 @@
 {
-  "name": "test",
   "tree": {
-    "$className": "DataModel",
-    "StarterGui": {
-      "$className": "StarterGui",
+    "m": {
       "$path": "src/StarterGui"
     }
   }
