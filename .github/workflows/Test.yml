@@ -36,15 +36,15 @@ jobs:
 
       - name: Build RBXMX
         run: |
-          rojo build default.project.json -o MiModelo.rbxmx
+          rojo build default.project.json -o shh.rbxmx
 
       - name: Verify RBXMX
         run: |
-          test -f MiModelo.rbxmx
-          test -s MiModelo.rbxmx
+          test -f shh.rbxmx
+          test -s shh.rbxmx
 
           echo "RBXMX generado:"
-          ls -lh MiModelo.rbxmx
+          ls -lh shh.rbxmx
 
       - name: Generate version
         id: version
@@ -58,5 +58,5 @@ jobs:
           name: "RBXMX ${{ steps.version.outputs.version }}"
           generate_release_notes: true
           files: |
-            MiModelo.rbxmx
+            shh.rbxmx
             sourcemap.json
