@@ -1,11 +1,7 @@
 {
-  "name": "Rbxmx",
+  "name": "UI",
   "tree": {
-    "$className": "DataModel",
-
-    "StarterGui": {
-      "$className": "StarterGui",
-      "$path": "src/StarterGui"
-    }
+    "$className": "ScreenGui",
+    "$path": "src/ExeUI"
   }
 }
