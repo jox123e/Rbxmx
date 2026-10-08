@@ -3,7 +3,7 @@
   "tree": {
     "$className": "Model",
     "m": {
-      "$path": "src/yo"
+      "$path": "src/_Main"
     }
   }
 }
