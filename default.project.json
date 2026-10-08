@@ -1,7 +1,6 @@
 {
   "name": "UI",
   "tree": {
-    "$className": "ScreenGui",
-    "$path": "src/ExeUI"
+    "$path": "src/M"
   }
 }
