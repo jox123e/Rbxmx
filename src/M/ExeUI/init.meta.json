@@ -1,8 +1,14 @@
 {
-  "className": "ScreenGui",
+  "name": "ExeUI",
+  "$className": "ScreenGui",
   "$properties": {
-    "ResetOnSpawn": false,
+    "Archivable": true,
+    "Enabled": true,
+    "DisplayOrder": 0,
     "IgnoreGuiInset": false,
-    "Enabled": true
+    "ResetOnSpawn": false,
+    "SafeAreaCompatibility": "FullscreenExtension",
+    "ScreenInsets": "CoreUISafeInsets",
+    "ZIndexBehavior": "Global"
   }
 }
