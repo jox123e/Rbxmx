@@ -1,5 +1,5 @@
 {
-  "name": "Repro",
+  "name": "test",
   "tree": {
     "$className": "DataModel",
     "StarterGui": {
