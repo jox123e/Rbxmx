@@ -1,3 +1,54 @@
 {
-    "className": "ScreenGui",
+  "name": "ExeUI",
+  "tree": {
+    "ExeUI": {
+      "$className": "ScreenGui",
+      "$properties": {
+        "Archivable": true,
+        "Enabled": true,
+        "DisplayOrder": 0,
+        "IgnoreGuiInset": false,
+        "ResetOnSpawn": false,
+        "SafeAreaCompatibility": "FullscreenExtension",
+        "ScreenInsets": "CoreUISafeInsets",
+        "ZIndexBehavior": "Global"
+      },
+
+      "Frame": {
+        "$className": "Frame",
+        "$properties": {
+          "Archivable": true,
+          "Active": false,
+          "AnchorPoint": [0, 0],
+          "AutomaticSize": "None",
+          "BackgroundColor3": [1, 1, 1],
+          "BackgroundTransparency": 0,
+          "BorderColor3": [0, 0, 0],
+          "BorderMode": "Outline",
+          "BorderSizePixel": 1,
+          "ClipsDescendants": false,
+          "Interactable": true,
+          "LayoutOrder": 0,
+          "Position": [
+            0.12591633200645447,
+            0,
+            0.010416666977107525,
+            0
+          ],
+          "Rotation": 0,
+          "Selectable": false,
+          "SelectionOrder": 0,
+          "Size": [
+            0.77422291040420532,
+            0,
+            0.9672619104385376,
+            0
+          ],
+          "SizeConstraint": "RelativeXY",
+          "Visible": true,
+          "ZIndex": 1
+        }
+      }
+    }
+  }
 }
