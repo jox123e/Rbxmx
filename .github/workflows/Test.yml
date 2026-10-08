@@ -13,30 +13,24 @@ permissions:
 jobs:
   build:
     name: Build RBXMX
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
       - name: Install Rojo
-        shell: bash
         run: |
-          set -e
+          cargo install rojo
 
-          curl -L \
-            https://github.com/rojo-rbx/rojo/releases/latest/download/rojo-linux-x86_64.tar.gz \
-            -o rojo.tar.gz
-
-          tar -xzf rojo.tar.gz
-
-          chmod +x rojo
-
-          sudo mv rojo /usr/local/bin/rojo
-
+      - name: Check Rojo
+        run: |
           rojo --version
 
-      - name: Validate Rojo project
+      - name: Validate project
         run: |
           rojo sourcemap default.project.json > sourcemap.json
 
@@ -45,44 +39,24 @@ jobs:
           rojo build default.project.json -o MiModelo.rbxmx
 
       - name: Verify RBXMX
-        shell: bash
         run: |
-          if [ ! -f "MiModelo.rbxmx" ]; then
-            echo "No se generó el archivo RBXMX."
-            exit 1
-          fi
+          test -f MiModelo.rbxmx
+          test -s MiModelo.rbxmx
 
-          if [ ! -s "MiModelo.rbxmx" ]; then
-            echo "El archivo RBXMX está vacío."
-            exit 1
-          fi
-
-          echo "RBXMX generado correctamente."
+          echo "RBXMX generado:"
           ls -lh MiModelo.rbxmx
 
       - name: Generate version
         id: version
-        shell: bash
         run: |
-          VERSION="v$(date +'%Y.%m.%d')-${GITHUB_RUN_NUMBER}"
-          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "version=v1.0.${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
 
-      - name: Create GitHub Release
+      - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.version }}
-          name: RBXMX ${{ steps.version.outputs.version }}
-          body: |
-            ## MiModelo
-
-            RBXMX generado automáticamente mediante Rojo.
-
-            Commit:
-            `${{ github.sha }}`
-
-            Run:
-            `${{ github.run_number }}`
+          name: "RBXMX ${{ steps.version.outputs.version }}"
+          generate_release_notes: true
           files: |
             MiModelo.rbxmx
             sourcemap.json
-          generate_release_notes: true
