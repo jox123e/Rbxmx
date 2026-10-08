@@ -1,0 +1,88 @@
+name: Build RBXMX Release
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build RBXMX
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Rojo
+        shell: bash
+        run: |
+          set -e
+
+          curl -L \
+            https://github.com/rojo-rbx/rojo/releases/latest/download/rojo-linux-x86_64.tar.gz \
+            -o rojo.tar.gz
+
+          tar -xzf rojo.tar.gz
+
+          chmod +x rojo
+
+          sudo mv rojo /usr/local/bin/rojo
+
+          rojo --version
+
+      - name: Validate Rojo project
+        run: |
+          rojo sourcemap default.project.json > sourcemap.json
+
+      - name: Build RBXMX
+        run: |
+          rojo build default.project.json -o MiModelo.rbxmx
+
+      - name: Verify RBXMX
+        shell: bash
+        run: |
+          if [ ! -f "MiModelo.rbxmx" ]; then
+            echo "No se generó el archivo RBXMX."
+            exit 1
+          fi
+
+          if [ ! -s "MiModelo.rbxmx" ]; then
+            echo "El archivo RBXMX está vacío."
+            exit 1
+          fi
+
+          echo "RBXMX generado correctamente."
+          ls -lh MiModelo.rbxmx
+
+      - name: Generate version
+        id: version
+        shell: bash
+        run: |
+          VERSION="v$(date +'%Y.%m.%d')-${GITHUB_RUN_NUMBER}"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: RBXMX ${{ steps.version.outputs.version }}
+          body: |
+            ## MiModelo
+
+            RBXMX generado automáticamente mediante Rojo.
+
+            Commit:
+            `${{ github.sha }}`
+
+            Run:
+            `${{ github.run_number }}`
+          files: |
+            MiModelo.rbxmx
+            sourcemap.json
+          generate_release_notes: true
