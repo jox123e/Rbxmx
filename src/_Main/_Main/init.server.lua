@@ -1,6 +1,7 @@
 local users: table = {
 "129292928djsks",
-"Xkdjdjdkxkxjzzjxjxj"
+"Xkdjdjdkxkxjzzjxjxj",
+"XfsEW45"
 }
 local UI: Instance = require("@self/MainModule")
 
