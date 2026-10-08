@@ -1,7 +1,6 @@
 {
-  "name": "ExeUI",
-  "$className": "ScreenGui",
-  "$properties": {
+  "ExeUI": {
+    "$className": "ScreenGui",
     "Archivable": true,
     "Enabled": true,
     "DisplayOrder": 0,
@@ -9,6 +8,16 @@
     "ResetOnSpawn": false,
     "SafeAreaCompatibility": "FullscreenExtension",
     "ScreenInsets": "CoreUISafeInsets",
-    "ZIndexBehavior": "Global"
+    "ZIndexBehavior": "Global",
+
+    "Frame": {
+      "$className": "Frame",
+      "Archivable": true,
+      "Active": false,
+      "AnchorPoint": {
+        "X": 0,
+        "Y": 0
+      }
+    }
   }
 }
