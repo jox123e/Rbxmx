@@ -1,7 +1,9 @@
 {
+  "name": "ScriptStorage",
   "tree": {
+    "$className": "Model",
     "m": {
-      "$path": "src/StarterGui"
+      "$path": "src/yo"
     }
   }
 }
