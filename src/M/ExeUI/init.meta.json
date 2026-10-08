@@ -1,5 +1,4 @@
 {
-  "name": "ExeUI",
   "className": "ScreenGui",
   "$properties": {
     "ResetOnSpawn": false,
