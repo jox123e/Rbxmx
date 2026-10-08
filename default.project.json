@@ -1,6 +1,11 @@
 {
-  "name": "m",
+  "name": "Rbxmx",
   "tree": {
-    "$path": "src/m"
+    "$className": "DataModel",
+
+    "StarterGui": {
+      "$className": "StarterGui",
+      "$path": "src/StarterGui"
+    }
   }
 }
