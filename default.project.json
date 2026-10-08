@@ -1,9 +1,10 @@
 {
-  "name": "UI",
+  "name": "Repro",
   "tree": {
     "$className": "DataModel",
-    "ExeUI": {
-      "$path": "src/M/ExeUI"
+    "StarterGui": {
+      "$className": "StarterGui",
+      "$path": "src/StarterGui"
     }
   }
 }
