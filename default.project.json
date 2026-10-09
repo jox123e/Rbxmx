@@ -2,7 +2,7 @@
   "name": "ScriptStorage",
   "tree": {
     "$className": "Model",
-    "m": {
+    "Main": {
       "$path": "src/Main"
     }
   }
