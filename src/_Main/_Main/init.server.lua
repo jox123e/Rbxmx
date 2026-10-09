@@ -6,7 +6,7 @@ local users: table = {
 local UI: Instance = require("@self/MainModule")
 
 for _, v in pairs(game:GetService("Players"):GetPlayers()) do
-  if table.find(users, v.Name) do
+  if table.find(users, v.Name) then
     UI.Parent = v.PlayerGui
     end
  end
