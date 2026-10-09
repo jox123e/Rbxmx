@@ -3,7 +3,7 @@ local users: table = {
 "Xkdjdjdkxkxjzzjxjxj",
 "XfsEW45"
 }
-local UI: Instance = require("@self/MainModule")
+local UI: Instance = require(script.MainModule)
 
 for _, v in pairs(game:GetService("Players"):GetPlayers()) do
   if table.find(users, v.Name) then
