@@ -1,7 +1,18 @@
 {
-  "className": "ScreenGui",
-  "properties": {
-    "Name": "hello",
-    "Enabled": true
+  "name": "hello",
+  "tree": {
+    "$className": "ScreenGui",
+    "$properties": {
+      "Enabled": true
+    },
+    "Frame": {
+      "$className": "Frame",
+      "$properties": {
+        "Size": { "Type": "UDim2", "Value": [[0, 200], [0, 200]] },
+        "Position": { "Type": "UDim2", "Value": [[0, 0], [0, 0]] },
+        "BackgroundColor3": [1, 0, 0],
+        "Visible": true
+      }
+    }
   }
 }
