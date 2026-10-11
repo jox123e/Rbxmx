@@ -3,16 +3,4 @@
   "properties": {
     "Name": "hello",
     "Enabled": true
-  },
-  "children": {
-    "Frame": {
-      "className": "Frame",
-      "properties": {
-        "Size": [0, 200, 0, 200],
-        "Position": [0, 0, 0, 0],
-        "BackgroundColor3": [1, 0, 0],
-        "Visible": true
-      }
-    }
   }
-}
