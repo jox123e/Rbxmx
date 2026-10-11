@@ -4,8 +4,7 @@
     "Name": "hello",
     "Enabled": true
   },
-  "Children": {
-    "MiFrame": {
+  {
       "ClassName": "Frame",
       "Properties": {
         "Size": [0, 200, 0, 200],
@@ -13,6 +12,4 @@
         "BackgroundColor3": [1, 0, 0],
         "Visible": true
       }
-    }
   }
-}
