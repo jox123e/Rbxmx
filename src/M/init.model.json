@@ -1,12 +1,11 @@
 {
-  "Name": "hello",
   "ClassName": "ScreenGui",
   "Properties": {
+    "Name": "hello",
     "Enabled": true
   },
-  "Children": [
-    {
-      "Name": "MiFrameRojo",
+  "Children": {
+    "MiFrame": {
       "ClassName": "Frame",
       "Properties": {
         "Size": [0, 200, 0, 200],
@@ -15,5 +14,5 @@
         "Visible": true
       }
     }
-  ]
+  }
 }
