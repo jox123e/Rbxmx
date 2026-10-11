@@ -1,0 +1,382 @@
+{
+"Name": "M",
+"ClassName": "ScreenGui",
+"Properties": {
+"Archivable": true,
+"Enabled": true,
+"DisplayOrder": 0,
+"IgnoreGuiInset": false,
+"ResetOnSpawn": false,
+"ZIndexBehavior": "Sibling"
+},
+"Children": [
+{
+"Name": "Frame",
+"ClassName": "Frame",
+"Properties": {
+"Archivable": true,
+"Active": false,
+"AnchorPoint": {
+"Vector2": [0, 0]
+},
+"AutomaticSize": "None",
+"BackgroundColor3": {
+"Color3": [1, 1, 1]
+},
+"BackgroundTransparency": 0.3,
+"BorderColor3": {
+"Color3": [0, 0, 0]
+},
+"BorderMode": "Outline",
+"BorderSizePixel": 0,
+"ClipsDescendants": false,
+"Interactable": true,
+"LayoutOrder": 0,
+"Position": {
+"UDim2": [[0.09678596258163452, 0], [0.01934519223868847, 0]]
+},
+"Rotation": 0,
+"Selectable": false,
+"SelectionOrder": 0,
+"Size": {
+"UDim2": [[0.6576442122459412, 0], [0.41369056701660156, 0]]
+},
+"SizeConstraint": "RelativeXY",
+"Visible": true,
+"ZIndex": 1
+},
+"Children": [
+{
+"Name": "UICorner",
+"ClassName": "UICorner",
+"Properties": {
+"Archivable": true,
+"CornerRadius": {
+"UDim": [0, 8]
+}
+}
+},
+{
+"Name": "UIDragDetector",
+"ClassName": "UIDragDetector",
+"Properties": {
+"Archivable": true,
+"ActivatedCursorIcon": "",
+"BoundingBehavior": "Automatic",
+"DragAxis": {
+"Vector2": [1, 0]
+},
+"DragStyle": "TranslatePlane",
+"ResponseStyle": "Offset"
+}
+},
+{
+"Name": "ExeBTN",
+"ClassName": "TextButton",
+"Properties": {
+"Archivable": true,
+"Active": true,
+"AnchorPoint": {
+"Vector2": [0, 0]
+},
+"AutomaticSize": "None",
+"BackgroundColor3": {
+"Color3": [0.9294118, 0.9294118, 0.9294118]
+},
+"BackgroundTransparency": 0.4,
+"BorderColor3": {
+"Color3": [0, 0, 0]
+},
+"BorderMode": "Outline",
+"BorderSizePixel": 0,
+"ClipsDescendants": false,
+"Interactable": true,
+"LayoutOrder": 0,
+"Position": {
+"UDim2": [[0.7890357971191406, 0], [0.08992792665958405, 0]]
+},
+"Rotation": 0,
+"Selectable": true,
+"SelectionOrder": 0,
+"Size": {
+"UDim2": [[0.16851268708705902, 0], [0.7805752754211426, 0]]
+},
+"SizeConstraint": "RelativeXY",
+"Visible": true,
+"ZIndex": 1,
+"Font": "Antique",
+"LineHeight": 1,
+"MaxVisibleGraphemes": -1,
+"RichText": false,
+"Text": "Execute",
+"TextColor3": {
+"Color3": [0, 0, 0]
+},
+"TextScaled": false,
+"TextSize": 25,
+"TextStrokeColor3": {
+"Color3": [0, 0, 0]
+},
+"TextStrokeTransparency": 1,
+"TextTransparency": 0,
+"TextTruncate": "None",
+"TextWrapped": true,
+"TextXAlignment": "Left",
+"TextYAlignment": "Top",
+"AutoButtonColor": true,
+"Modal": false,
+"Style": "Custom"
+},
+"Children": [
+{
+"Name": "UIStroke",
+"ClassName": "UIStroke",
+"Properties": {
+"Archivable": true,
+"ApplyStrokeMode": "Border",
+"Color": {
+"Color3": [0, 0, 0]
+},
+"LineJoinMode": "Round",
+"Thickness": 1,
+"Transparency": 0
+}
+},
+{
+"Name": "UICorner",
+"ClassName": "UICorner",
+"Properties": {
+"Archivable": true,
+"CornerRadius": {
+"UDim": [0, 8]
+}
+}
+},
+{
+"Name": "UIGradient",
+"ClassName": "UIGradient",
+"Properties": {
+"Archivable": true,
+"Color": {
+"ColorSequence": [
+{
+"Time": 0,
+"Color": {
+"Color3": [0, 0, 0.3333333]
+}
+},
+{
+"Time": 1,
+"Color": {
+"Color3": [0, 0, 1]
+}
+}
+]
+},
+"Enabled": true,
+"Offset": {
+"Vector2": [0, 0]
+},
+"Rotation": 0,
+"Transparency": {
+"NumberSequence": [
+{
+"Time": 0,
+"Value": 0
+},
+{
+"Time": 1,
+"Value": 0
+}
+]
+}
+}
+}
+]
+},
+{
+"Name": "UIGradient",
+"ClassName": "UIGradient",
+"Properties": {
+"Archivable": true,
+"Color": {
+"ColorSequence": [
+{
+"Time": 0,
+"Color": {
+"Color3": [0, 0, 0.3333333]
+}
+},
+{
+"Time": 1,
+"Color": {
+"Color3": [0, 0, 1]
+}
+}
+]
+},
+"Enabled": true,
+"Offset": {
+"Vector2": [0, 0]
+},
+"Rotation": 0,
+"Transparency": {
+"NumberSequence": [
+{
+"Time": 0,
+"Value": 0
+},
+{
+"Time": 1,
+"Value": 0
+}
+]
+}
+}
+},
+{
+"Name": "TextBox",
+"ClassName": "TextBox",
+"Properties": {
+"Archivable": true,
+"Active": true,
+"AnchorPoint": {
+"Vector2": [0, 0]
+},
+"AutomaticSize": "None",
+"BackgroundColor3": {
+"Color3": [1, 1, 1]
+},
+"BackgroundTransparency": 0.4,
+"BorderColor3": {
+"Color3": [0, 0, 0]
+},
+"BorderMode": "Outline",
+"BorderSizePixel": 0,
+"ClipsDescendants": false,
+"Interactable": true,
+"LayoutOrder": 0,
+"Position": {
+"UDim2": [[0.038704607635736465, 0], [0.10431663691997528, 0]]
+},
+"Rotation": 0,
+"Selectable": true,
+"SelectionOrder": 0,
+"Size": {
+"UDim2": [[0.7359278202056885, 0], [0.7482011318206787, 0]]
+},
+"SizeConstraint": "RelativeXY",
+"Visible": true,
+"ZIndex": 1,
+"Font": "Antique",
+"LineHeight": 1,
+"MaxVisibleGraphemes": -1,
+"RichText": false,
+"Text": "",
+"TextColor3": {
+"Color3": [0, 0, 0]
+},
+"TextScaled": false,
+"TextSize": 25,
+"TextStrokeColor3": {
+"Color3": [0, 0, 0]
+},
+"TextStrokeTransparency": 1,
+"TextTransparency": 0,
+"TextTruncate": "None",
+"TextWrapped": true,
+"TextXAlignment": "Left",
+"TextYAlignment": "Top",
+"ClearTextOnFocus": false,
+"MultiLine": false,
+"PlaceholderColor3": {
+"Color3": [0.6980392, 0.6980392, 0.6980392]
+},
+"PlaceholderText": "",
+"TextEditable": true
+},
+"Children": [
+{
+"Name": "UIStroke",
+"ClassName": "UIStroke",
+"Properties": {
+"Archivable": true,
+"ApplyStrokeMode": "Border",
+"Color": {
+"Color3": [0, 0, 0]
+},
+"LineJoinMode": "Round",
+"Thickness": 1,
+"Transparency": 0
+}
+},
+{
+"Name": "UICorner",
+"ClassName": "UICorner",
+"Properties": {
+"Archivable": true,
+"CornerRadius": {
+"UDim": [0, 8]
+}
+}
+},
+{
+"Name": "UIGradient",
+"ClassName": "UIGradient",
+"Properties": {
+"Archivable": true,
+"Color": {
+"ColorSequence": [
+{
+"Time": 0,
+"Color": {
+"Color3": [0, 0, 0.3333333]
+}
+},
+{
+"Time": 1,
+"Color": {
+"Color3": [0, 0, 1]
+}
+}
+]
+},
+"Enabled": true,
+"Offset": {
+"Vector2": [0, 0]
+},
+"Rotation": 0,
+"Transparency": {
+"NumberSequence": [
+{
+"Time": 0,
+"Value": 0
+},
+{
+"Time": 1,
+"Value": 0
+}
+]
+}
+}
+}
+]
+},
+{
+"Name": "UIStroke",
+"ClassName": "UIStroke",
+"Properties": {
+"Archivable": true,
+"ApplyStrokeMode": "Contextual",
+"Color": {
+"Color3": [0, 0, 0]
+},
+"LineJoinMode": "Round",
+"Thickness": 1,
+"Transparency": 0
+}
+}
+]
+}
+]
+}
