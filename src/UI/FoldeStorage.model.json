@@ -9,7 +9,7 @@
     "Name": "Main",
     "ClassName": "Script",
     "Properties": {
-        "$path": "Main.Server.lua"
+        "$path": "Main.server.lua"
      }
     }
   ]
