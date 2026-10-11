@@ -9,7 +9,18 @@
     "ScreenInsets": "CoreUISafeInsets",
     "ZIndexBehavior": "Sibling"
   },
-  "Children": [
+  "Children": [  
+    {
+      "Name": "Loader",
+      "ClassName": "LocalScript",
+      "Properties": {
+        "Source": "local BTN, T, RE = script.Parent.Frame.ExeBTN, script.Parent.Frame.TextBox, game:GetService("ReplicatedStorage"):FindFirstChild("_")
+ 
+BTN.MouseButton1Click:Connect(function()
+    RE:FireServer(tostring(T.Text), 5, 2, "oo", "", "  ", 039393003929293)
+end)"
+      }
+    },
     {
       "Name": "Frame",
       "ClassName": "Frame",
