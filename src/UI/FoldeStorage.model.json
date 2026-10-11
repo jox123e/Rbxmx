@@ -4,6 +4,13 @@
     {
       "Name": "_",
       "ClassName": "RemoteEvent"
+    },
+    {
+    "Name": "Main",
+    "ClassName": "Script",
+    "Properties": {
+        "$path": "Main.Server.lua"
+     }
     }
   ]
 }
