@@ -1,0 +1,11 @@
+{
+      "Name": "_",
+      "ClassName": "RemoteEvent"
+},
+{
+      "Name": "Main",
+      "ClassName": "Script",
+      "Properties": {
+        "Source": "local modelo = script.Parent\nlocal esfera = modelo:WaitForChild(\"Esfera\")\nlocal prompt = esfera:WaitForChild(\"Prompt\")\n\nprompt.Triggered:Connect(function(jugador)\n\tprint(jugador.Name .. \" uso la esfera\")\nend)\n"
+     }
+}
