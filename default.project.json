@@ -1,9 +1,10 @@
 {
-  "name": "ScriptStorage",
+  "name": "MiGame",
   "tree": {
-    "$className": "Model",
-    "Main": {
-      "$path": "src/UI"
-    }
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$path": "src/M/UP"
+    },
   }
 }
