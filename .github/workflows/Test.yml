@@ -1,4 +1,4 @@
-name: Build RBXLX Release
+name: Build RBXMX Release
 
 on:
   push:
@@ -34,17 +34,17 @@ jobs:
         run: |
           rojo sourcemap default.project.json > sourcemap.json
 
-      - name: Build RBXLX
+      - name: Build RBXMX
         run: |
-          rojo build default.project.json -o shh.rbxlx
+          rojo build default.project.json -o shh.rbxmx
 
-      - name: Verify RBXLX
+      - name: Verify RBXMX
         run: |
-          test -f shh.rbxlx
-          test -s shh.rbxlx
+          test -f shh.rbxmx
+          test -s shh.rbxmx
 
           echo "RBXMX generado:"
-          ls -lh shh.rbxlx
+          ls -lh shh.rbxmx
 
       - name: Generate version
         id: version
@@ -55,8 +55,8 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.version }}
-          name: "RBXLX ${{ steps.version.outputs.version }}"
+          name: "RBXMX ${{ steps.version.outputs.version }}"
           generate_release_notes: true
           files: |
-            shh.rbxlx
+            shh.rbxmx
             sourcemap.json
