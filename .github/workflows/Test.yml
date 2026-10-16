@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   build:
-    name: Build RBXLX
+    name: Build RBXMX
     runs-on: ubuntu-24.04
 
     steps:
