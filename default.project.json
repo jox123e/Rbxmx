@@ -1,10 +1,6 @@
 {
-  "name": "MiGame",
+  "name": "test",
   "tree": {
-    "$className": "DataModel",
-    "ServerScriptService": {
-      "$className": "ServerScriptService",
-      "$path": "src/M/UP"
-    },
+    "$path": "src/test.lua"
   }
 }
