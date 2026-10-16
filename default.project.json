@@ -1,6 +1,6 @@
 {
   "name": "test",
   "tree": {
-    "$path": "src/test.lua"
+    "$path": "src/MainModule.lua"
   }
 }
