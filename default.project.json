@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "MainModule",
   "tree": {
     "$path": "src/MainModule.lua"
   }
