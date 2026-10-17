@@ -11,4 +11,4 @@ local function execute(url: string)
     end
 end
 
-return { l = execute })
+return { l = execute }
