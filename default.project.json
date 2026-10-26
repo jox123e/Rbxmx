@@ -1,6 +1,6 @@
 {
-  "name": "MainModule",
+  "name": "DevBuild",
   "tree": {
-    "$path": "src/MainModule"
+    "$path": "src"
   }
 }
