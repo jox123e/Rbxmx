@@ -1,6 +1,22 @@
 {
   "name": "DevBuild",
   "tree": {
-    "$path": "src"
+    "$className": "DataModel",
+    "$path": "src",
+    "Workspace": {
+      "$className": "Workspace"
+    },
+    "HttpService": {
+      "$className": "HttpService",
+      "$properties": {
+        "HttpEnabled": true
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$properties": {
+        "LoadStringEnabled": true
+      }
+    }
   }
 }
