@@ -1,20 +1,36 @@
-
 {
-  "ClassName": "Part",
-  "Name": "Baseplate",
-  "Anchored": true,
-  "CanCollide": true,
-  "Locked": true,
-  "Size": [2048, 16, 2048],
-  "CFrame": [0, -8, 0],
-  "Color": [91, 91, 91],
-  "Texture": {
-    "ClassName": "Texture",
-    "Name": "Texture",
-    "Texture": "rbxassetid://6372755229",
-    "Face": "Top",
-    "StudsPerTileU": 8,
-    "StudsPerTileV": 8,
-    "Transparency": 0.8
-  }
-}
+      "Name": "Baseplate",
+      "ClassName": "Part",
+      "Properties": {
+        "Anchored": true,
+        "CanCollide": true,
+        "EnableFluidForces": false,
+        "Locked": true,
+        "Size": [2048, 16, 2048],
+        "CFrame": [
+          0, -8, 0,
+          1, 0, 0,
+          0, 1, 0,
+          0, 0, 1
+        ],
+        "Color": [
+          0.3568627451,
+          0.3568627451,
+          0.3568627451
+        ]
+      },
+      "Children": [
+        {
+          "Name": "Texture",
+          "ClassName": "Texture",
+          "Properties": {
+            "Face": "Top",
+            "Texture": "rbxassetid://6372755229",
+            "StudsPerTileU": 8,
+            "StudsPerTileV": 8,
+            "Transparency": 0.80000001192092896,
+            "Color3": [0, 0, 0]
+          }
+        }
+      ]
+    }
