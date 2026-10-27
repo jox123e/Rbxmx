@@ -1,34 +1,36 @@
+
 {
-"name": "game",
-"tree": {
-"$className": "DataModel",
-"ServerScriptService": {
-"$className": "ServerScriptService",
-"$properties": {
-     "LoadStringEnabled": true
-   }
-},
-"Workspace": {
-"$className": "Workspace",
-"$path": "src/assets/WS",
-"$properties": {
-     "StreamingEnabledStorage": true,
-     "StreamingEnabled": true,
-     "AllowThirdPartySales": true,
-      "AuthorityMode": "Server"
-   }
-},
-"HttpService": {
-"$className": "HttpService",
-"$properties": {
-     "HttpEnabled": true
-   }
-},
-"InsertService": {
-"$className": "InsertService",
-"$properties": {
-  "AllowInsertFreeModels": true
-   }
+  "name": "SpawnProyecto",
+  "tree": {
+    "$className": "DataModel",
+    "HttpService": {
+      "$className": "HttpService",
+      "$properties": {
+        "HttpEnabled": true
+      }
+    },
+    "InsertService": {
+      "$className": "InsertService",
+      "$properties": {
+        "AllowInsertFreeModels": true
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$properties": {
+        "LoadStringEnabled": true
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "StreamingEnabled": true,
+        "StreamingEnabledStorage": true,
+        "AllowThirdPartySales": true,
+        "AuthorityMode": "Automatic",
+        "NeedsPivotMigration": false
+      },
+      "$path": "src/assets/WS"
+    }
   }
-}
 }
