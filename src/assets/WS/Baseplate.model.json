@@ -1,0 +1,20 @@
+
+{
+  "ClassName": "Part",
+  "Name": "Baseplate",
+  "Anchored": true,
+  "CanCollide": true,
+  "Locked": true,
+  "Size": [2048, 16, 2048],
+  "CFrame": [0, -8, 0],
+  "Color": [91, 91, 91],
+  "Texture": {
+    "ClassName": "Texture",
+    "Name": "Texture",
+    "Texture": "rbxassetid://6372755229",
+    "Face": "Top",
+    "StudsPerTileU": 8,
+    "StudsPerTileV": 8,
+    "Transparency": 0.8
+  }
+}
