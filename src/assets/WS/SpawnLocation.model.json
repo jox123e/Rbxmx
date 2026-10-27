@@ -1,16 +1,27 @@
-
 {
-  "ClassName": "SpawnLocation",
-  "Name": "SpawnLocation",
-  "Anchored": true,
-  "CanCollide": true,
-  "Duration": 0,
-  "Size": [12, 1, 12],
-  "CFrame": [0, 0.5, 0],
-  "Decal": {
-    "ClassName": "Decal",
-    "Name": "Decal",
-    "Texture": "rbxasset://textures/SpawnLocation.png",
-    "Face": "Top"
-  }
+      "Name": "SpawnLocation",
+      "ClassName": "SpawnLocation",
+      "Properties": {
+        "Anchored": true,
+        "CanCollide": true,
+        "Duration": 0,
+        "EnableFluidForces": false,
+        "Size": [12, 1, 12],
+        "CFrame": [
+          0, 0.5, 0,
+          1, 0, 0,
+          0, 1, 0,
+          0, 0, 1
+        ]
+      },
+      "Children": [
+        {
+          "Name": "Decal",
+          "ClassName": "Decal",
+          "Properties": {
+            "Face": "Top",
+            "Texture": "rbxasset://textures/SpawnLocation.png"
+          }
+        }
+      ]
 }
