@@ -1,7 +1,6 @@
-{
-  "name": "MainModule",
+{{
+  "name": "SpawnProyecto",
   "tree": {
-    "$className": "ModuleScript",
     "$path": "src/MainModule"
   }
 }
